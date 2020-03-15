@@ -1,0 +1,151 @@
+# Changelog - GameServer
+
+🌀 [15/03/2020]
+- Base de datos 'game' parcheada hasta el parche v13 "Cofre animado", los detalles son los siguientes: Parches aplicados para completar parcial o completamente las mascotas, animaciones, hechizo "Puño",  defensores de recursos, bancos, EPOs, abono, retos, runas, objetos con acciones, regalos, acción de cinemática al bajar hacia Astrub e implementacióm del hechizo "Cofre Animado" con su IA correspondiente.
+
+🌀 [18/08/2012] (Último cambio oficial realizado)
+- SQLManger/GameThread: Corrección del sistema de regalos.
+
+🌀 [16/08/2012]
+- GameThread: Se agregó el canal de chat para Incarnam (/i).
+- Fight: Se ha aplicado un debug al dropeo de objetos y kamas para "Cofre animado". 
+
+🌀 [10/08/2012]
+- SpellEffect: Corrección de applyEffect_77 (robo de PM).
+- SpellEffect: Morir durante el turno de juego hace pasar el turno automáticamente. 
+
+🌀 [08/08/2012]
+- Fight/Challenges: Se corrigió un NullPointerException al abandonar un combate.
+
+🌀 [06/08/2012]
+- IA: Se agregó una IA para "Mochila animada".
+- IA: "Mochila animada" buscará (siempre que pueda) otorgar "Sacrificio" a un aliado.
+- IA: Agregada influencia a la invocación "Árbol de vida".
+- SocketManager/Fight: Durante una falla de condiciones, ya no es obligatorio pasar nuestro turno.
+- Fight: Cuando un luchador muere y él ha dado buffs a otros luchadores, los buffs se eliminan.
+- Personnage: Ahora podemos ver el color de las alas dependiendo del nivel del jugador.
+- Personnage: Ahora podemos ver los agujeros en las alas gracias a los puntos de deshonor.
+
+🌀 [05/08/2012]
+- Fight: Corrección del cálculo de prospección para los retos.
+- Fight: Corección de drops.
+
+🌀 [03/08/2012] (Ancestra Remake Rev51)
+- GameThread: Corrección del cierre de los paneles de invitación grupal si el invitado responde "No".
+
+🌀 [02/08/2012]
+- GameThread: Ya no es posible entrar en un combate si ya ha comenzado (gracias xixou).
+
+🌀 [01/08/2012]
+- Objet/Pets/PetsEntry: Simplificación del  código, corrección de diversos problemas.
+- Personnage/Fight/Carte: El personaje ya no comienza automáticamente un combate si aparece en una celda ocupada por un grupo de monstruos (reducción de errores).
+- Metier/Objet: Simplificación del código de forjamagia.
+
+🌀 [25/07/2012]
+- SocketManager/Action/SQL: Se agregó la cinemática del viaje desde Incarnam hasta Astrub  (AncestraR_Game - Patch rev12 - Cinématique IA)
+
+🌀 [23/07/2012]
+- Fight/PetsEntry/Pets/GameThread: Se agregaron las mascotas devoradoras de almas [DeeZ].
+
+🌀 [22/07/2012]
+- [...]: Corrección de errores de conexión después de la pantalla de regalos [DeeZ].
+
+🌀 [21/07/2012]
+- Fight/Personnage/Formulas: Se agregaron los debuffs curativos [DeeZ].
+
+🌀 [20/07/2012]
+- ConditionParser: Se agrego la condición "PJ".
+- Compte: La desconexión conduce al cierre de los paneles de solicitud de interarcambio/invitación.
+- World/Personnage/Action/GameThread/Carte/Constants: Se agregó el libro de artesanos (AncestraR_Game - Patch rev9 - Rune Artisans).
+- Constants: Corrección dela función "isMageJob".
+- Pathfinding/Carte/World/GameServer: Se agregó el movimiento de monstruos/recaudadores.
+- Gift/GameThread/SQLManager/World/Compte...: Se agregó el sistema de regalos (AncestraR_Game - Patch rev11 - Gift) [DeeZ].
+- BDD: AncestraR_Game - Patch rev10 - Bonbons [DeeZ].
+- Constants: Corrección de la constante STATS_ADD_DOMA [DeeZ].
+- SpellEffect: Corrección de applyEffect_149 [DeeZ].
+
+🌀 [19/07/2012]
+- Constants: Corrección de los yunques para los oficios: Escultor de Arcos/Bastones/Varitas y Forjador de Espadas.
+
+🌀 [18/07/2012]
+- Fight: La muerte del recaudador conduce a la derrota del equipo que lo defiende.
+- Commands: Se agregó el comando SENDME <str> que permite enviar a los jugadores el packet determinado en: <str>.
+- Personnage: Las cuentas no abonadas  ya no pueden usar su montura.
+
+🌀 [17/07/2012]
+- SocketManager/Personnage/Compte/GameThread: Adición del sistema de abono: Imposible equipar mascotas, teletransportación a la estatua de clase si está en una zona de abonados sin serlo, adición de mensajes y el famoso candado si entras en una zona de abonados sin serlo, sin PvP, PVM, agresión de recaudadores ni tampoco acceso al modo mercante o mercadillos.
+
+🌀 [16/07/2012]
+- Fight: La prohibición de espectadores expulsa a todos los espectadores presentes en el combate.
+
+🌀 [14/07/2012]
+- Fight/Challenge/Formulas...: Los ahora están completados [DeeZ].
+- Fight: Cuando un espectador se une a un combate y hay retos, ahora puede verlos [DeeZ].
+
+🌀 [13/07/2012]
+- Personnage: Cuando nos conectamos y nuestra energía es inferior a 2000, se muestra un mensaje [DeeZ].
+- Challenge/Fight/SocketManager...: Adición parcial de retos [DeeZ].
+
+🌀 [11/07/2012]
+- Personnage/GameThread/SocketManager/Fight : Quedar sin energía te teletransporta al cementerio más cercano [DeeZ].
+- World/BDD: Comienzo de la delimitación entre áreas de abonados y no abonados (Patch: AncestraR_Game - patch rev7 - Abonnement).
+
+🌀 [10/07/2012]
+- Personnage: Cuando usas el set 'Vampyro', tienes el aura.
+- Familier/Action/PetsEntry: Adición de EPOs para las mascotas (Patch: AncestraR_Game - Patch rev6 - EPO).
+
+🌀 [09/07/2012]
+- Fight: Puño agregado (Patch: AncestraR_Game - parche rev5 - Punch).
+- Fight: Las estrellas de monstruos ahora se muestran al pasar el cursor sobre ellos [DeeZ]
+- Formulas/Fight: Adición de una fórmula de bonificación para estrellas de monstruos.
+- Monstre: Se corrigió un error de visualización de grupo.
+- Monstre/Formulas/Fight: Adición del sistema de estrellas [DeeZ].
+- Fight/SocketManager: Corrección de mensajes durante la agresión del recaudador [DeeZ].
+- Formulas: Adición de la pérdida de puntos de vida incurables (10% menos PDV dependiendo del daño recibido).
+
+🌀 [08/07/2012]
+- Object/World/Pets/PetsEntry/GameThread: Fin de las mascotas tipo 2 y 3 (Alimentar/Boost Stats/Muerte/Polvos de Aniripsa).
+- Commands: Adición del comando RES <id> para revivir una mascota.
+- SQLManager: Corrección de la función persoExist.
+- World: Corrección en la eliminación de personajes.
+- Personnage: Adición de la cinemática de inicio [DeeZ].
+- Personnage/Fight/Commands: Adición de packets Im para las funciones addHonor y remHonor [DeeZ].
+- World/Guild/GameThread: Adición de la función 'Hablar' para los recaudadores [DeeZ].
+- GameThread: Cuando se come pan o se bebecerveza, se inicia la animación [DeeZ].
+- GameThread/Personnage/SocketManager: Adición de impuestos al modo mercante [DeeZ].
+
+🌀 [06/07/2012]
+- Action: Corrección del banco (ya no roba 566 kamas) (Patch: AncestraR_Game - Patch rev4) [DeeZ]. Es posible abrir el banco si ya no tiene kamas, pero quedan suficientes en el banco.
+- Fight: Corrección de la función GetGE.
+- Percepteur/Fight: Adición de la función clearDefenseFight() que permite salir de la lista de defensores si el recaudador gana la pelea.
+
+🌀 [04/07/2012]
+- GameServer/Game_Config.txt: Simplificación de los diferentes temporizadores (por lo tanto, todos los temporizadores disponibles en la configuración se expresan en minutos).
+
+🌀 [28/06/2012]
+- Fight: Ahora se obtienen los objetos y kamas del recaudador que se vence en combate [DeeZ].
+- Métier/Objet : Simplificación del código de forjamagia.
+- IA: Corrección de un bug del recaudador (no pasaba su turno) (simplificación de código).
+
+🌀 [27/06/2012]
+- Fight: Corrección de un error al combatir CaC [DeeZ].
+- GameThread: Adición de la acción "Liberar la montura" [DeeZ].
+- Metier/Constants: Adición de los defensores de recursos (Patch: AncestraR_Game - Patch rev3 - Defenders of resources) [DeeZ].
+- Object/World/Pets/PetsEntry/GameThread: Inicio del sistema de mascotas (Patch: AncestraR_Game - Patch rev2 - Pets).
+- BDD : Ajout d'une colonne oubliée (Patch AncestraR_Game - Patch rev1).
+
+🌀 [21/06/2012]
+- Fight: El fallo crítico de un hechizo ya no lo deja inutilizable durante el número de turnos entre dos lanzamientos.
+- Commande: Adición de cierta información al comando mapinfo.
+- GameThread: Actualización de pods durante una compra en mercadillos (HDV).
+- GameThread: Adición de precios promedio a mercadillos (HDV).
+
+🌀 [20/06/2012]
+- Commands: Se agregó el comando FullHDV <nbr>.
+- Carte/Percepteur/GameThread/Fight: Ahora se conoce el número de espacios de combate en un mapa, lo que permite una mejor gestión del combate de los recaudadores, además este tipo de combates es ahora más ankalike (tiempo en que aparecen los defensores).
+- Personnage/GameThread: Ya no es posible mantenerse en contacto con el recaudador durante más de 2 minutos.
+- IA: Corrección de ciertos errores vinculados a los ID de celda en el borde del mapa (mob no pasa su turno) (moveFarIfPossible, testCotes).
+
+🌀 [17/06/2012]
+- ComThread/ComServer: El crash del Realm ya no hace crashear a Game (auto-reconexión).
+- Percepteur/Carte/Fight: Simplificación de la entrada a combate del recaudador (panel de gremio).

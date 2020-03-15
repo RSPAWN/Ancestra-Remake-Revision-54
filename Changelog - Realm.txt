@@ -1,0 +1,29 @@
+# Changelog - RealmServer
+
+🌀 [15/03/2020]
+- Base de datos 'other' parcheada hasta el parche v3 "Cofre animado", los detalles son los siguientes: Parches aplicados para completar  el sistema de abono y regalos y la columa 'logged' de la tabla 'accounts' ha sido implementada.
+- SendManager: Correcciones en el método actionPerformed.
+- RealmThread: Corregido error durante secuencia "Af".
+
+🌀 [14/08/2012]
+- SQLManager: Reconexión automática del RealmServer a la base de datos en caso de pérdida de conexión.
+
+🌀 [22/07/2012]
+- [...]: Corrección de errores de conexión después de la pantalla de regalos [DeeZ].
+
+🌀 [20/07/2012]
+- Account: Adición de los regalos en la pantalla de selección de personaje [DeeZ].
+
+🌀 [17/07/2012]
+/Realm v0.3\
+- SocketManager: Corrección de Logs.
+- SQLManager/Account/Ancestra/RealmThread/Realm_Config: Adición de la primera parte del sistema de abono.
+
+🌀 [17/06/2012]
+/Realm v0.2\
+- [...]: Corrección de Logs.
+- RealmThread: Cerrar el servidor provoca la expulsión de los clientes.
+- [...]: Eliminación de códigos inútiles.
+
+🌀 [21/11/2011]
+- [...]: Adición de sistema multiservidor.
